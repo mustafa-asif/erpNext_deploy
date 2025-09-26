@@ -2,7 +2,7 @@
 
 # Database data
 storeData/db-data/
-storeData/redis-data/
+storeData/redis-queue-data/
 
 # Logs
 storeData/logs/
