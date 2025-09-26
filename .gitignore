@@ -23,3 +23,6 @@ node_modules/
 # Docker generated stuff
 *.pid
 *.sock
+
+# env
+*.env
