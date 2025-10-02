@@ -107,9 +107,9 @@ services:
       - frappe_network
     depends_on:
       - websocket
-    deploy:
-      restart_policy:
-        condition: on-failure
+    # deploy:
+    #   restart_policy:
+    #     condition: on-failure
     command:
       - nginx-entrypoint.sh
     environment:
@@ -127,6 +127,7 @@ services:
     ports:
       - "80:8080"
       - "443:8443"
+    restart: always  
 
   queue-long:
     image: frappe/erpnext:v15.79.0
