@@ -209,15 +209,7 @@ services:
       REDIS_CACHE: redis-cache:6379
       # REDIS_SOCKETIO: redis:6379
 
-volumes:
-  db-data:
-    external: true
-  redis-queue-data:
-    external: true
-  sites:
-    external: true
-  logs:
-    external: true
+
 
 networks:
   frappe_network:
